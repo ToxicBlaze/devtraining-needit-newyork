@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__b36d62939ab00010e11725992447afde">776d6293dbb000100a67f53a299619e0</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"bf8e8ef6ba8f4cd9949dedd7e0325c8f","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"bf8e8ef6ba8f4cd9949dedd7e0325c8f"}],"goals":[{"name":"primary","trigger_id":"bf8e8ef6ba8f4cd9949dedd7e0325c8f","nodes":[{"type":"StartGoal","goal_id":"b735b1793c4240c9962d7f575e63ec16","greeting_msg":{"type":"String","mode":"string","value":""},"id":"ee991f5ec0684a36854eaea0be8d6226","name":"Start"},{"type":"TerminateGoal","goal_id":"b735b1793c4240c9962d7f575e63ec16","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"02f310af1fbd4fb1b7de68f8ccbd878b","name":"End"},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"2f5ea399df3646eba190ab7909172e66","name":"NeedIt List","goal_id":"b735b1793c4240c9962d7f575e63ec16","applicability":{"type":"Applicability","mode":"script","value":"true"},"variable_id":"4c3002ae5e944a61886c57e3b67250af","message":{"type":"String","mode":"string","value":"Select a NeedIt record to view."},"optional":false,"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":false},"expression_mode":"simple","no_options_found_message":{"type":"String","mode":"string","value":"You have no open NeedIt records."},"condition":{"type":"Condition","mode":"glide_query","value":"active=true"}}],"edges":[{"type":"Edge","source_node_id":"ee991f5ec0684a36854eaea0be8d6226","target_node_id":"2f5ea399df3646eba190ab7909172e66","id":"523d4909c0a24869805bf2356b60c115"},{"type":"Edge","source_node_id":"2f5ea399df3646eba190ab7909172e66","target_node_id":"02f310af1fbd4fb1b7de68f8ccbd878b","id":"9dcb927c161a4c24b7a9e249828c1f0b"}],"id":"b735b1793c4240c9962d7f575e63ec16"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"x_58872_needit_needit","reference_qualifier_condition":"active=true","id":"4c3002ae5e944a61886c57e3b67250af","name":"needit_list"},{"type":"Reference","table":"sys_user","id":"current-user","name":"user"}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"6ead8e780f603200cd674f8ce1050ed1","id":"b0ea6653dbb000100a67f53a299619ff","name":"_PRVW__b36d62939ab00010e11725992447afde","key_phrases":["Update NeedIt Records","NeedIt Request"],"nlu_provider":"","nlu_model":"","nlu_intent":"","flexible_conversation_switching":false,"design_category":"e08072d2dbf480100a67f53a29961918"}</design_definition>
+        <design_topic_id>b0ea6653dbb000100a67f53a299619ff</design_topic_id>
+        <name>_PRVW__b36d62939ab00010e11725992447afde</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-04 08:43:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>376d2217dbb000100a67f53a299619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_design_topic_376d2217dbb000100a67f53a299619e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-04 08:43:33</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
